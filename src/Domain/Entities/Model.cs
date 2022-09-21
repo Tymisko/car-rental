@@ -5,7 +5,9 @@ namespace Domain.Entities;
 
 public class Model
 {
-    [Key] public Guid Id { get; set; }
-    [ForeignKey(nameof(Brand))] public Guid BrandId { get; set; }
+    [Key] 
+    public Guid Id { get; set; }
+    public Guid BrandId { get; set; }
+    public Brand Brand { get; set; }
     public string Name { get; set; }
 }

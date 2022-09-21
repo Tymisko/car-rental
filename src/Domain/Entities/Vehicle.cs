@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities;
 
@@ -14,9 +13,13 @@ public class Vehicle
     public int HorsePowers { get; set; }
     public string Vin { get; set; }
     public string LicensePlate { get; set; }
-    [ForeignKey(nameof(FuelType))] public Guid FuelTypeId { get; set; }
-    [ForeignKey(nameof(BodyType))] public Guid BodyTypeId { get; set; }
-    [ForeignKey(nameof(GearboxType))] public Guid GearboxTypeId { get; set; }
-    [ForeignKey(nameof(Generation))] public Guid GenerationId { get; set; }
-    [ForeignKey(nameof(Accessories))] public Guid[] AccessoriesIds { get; set; }
+    public Guid FuelTypeId { get; set; }
+    public FuelType FuelType { get; set; }
+    public Guid BodyTypeId { get; set; }
+    public BodyType BodyType { get; set; }
+    public Guid GearboxTypeId { get; set; }
+    public GearboxType GearboxType { get; set; }
+    public Guid GenerationId { get; set; }
+    public Generation Generation { get; set; }
+    public ICollection<Accessory> Accessories { get; set; }
 }

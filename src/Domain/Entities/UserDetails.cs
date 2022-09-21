@@ -7,6 +7,10 @@ public class UserDetails
 {
     [Key]
     public Guid Id { get; set; }
+    public Guid AddressId { get; set; }
+    public Address Address { get; set; }
+    public Guid UserId { get; set; }
+    public User User { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string PhoneNumber { get; set; }
@@ -15,8 +19,4 @@ public class UserDetails
     public string IdentityCardNumber { get; set; }
     public string? CompanyName { get; set; }
     public string? NIP { get; set; }
-    [ForeignKey(nameof(Address))]
-    public Guid AddressId { get; set; }
-    [ForeignKey(nameof(User))]
-    public Guid UserId { get; set; }
 }
