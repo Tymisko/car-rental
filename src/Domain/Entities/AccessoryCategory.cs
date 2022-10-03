@@ -1,11 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Domain.Entities;
+﻿namespace Domain.Entities;
 
 public class AccessoryCategory
 {
-    [Key]
     public Guid Id { get; set; }
     public string Name { get; set; }
-    public int Value { get; set; }
+    public ICollection<Accessory> Accessories { get; set; }
 }

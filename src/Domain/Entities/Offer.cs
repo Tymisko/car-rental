@@ -1,10 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Domain.Entities;
+﻿namespace Domain.Entities;
 
 public class Offer
 {
-    [Key] 
     public Guid Id { get; set; }
     public Guid VehicleId { get; set; }
     public Vehicle Vehicle { get; set; }
