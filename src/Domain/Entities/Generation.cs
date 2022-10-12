@@ -6,4 +6,5 @@ public class Generation
     public Guid ModelId { get; set; }
     public Model Model { get; set; }
     public string Name { get; set; }
+    public ICollection<Vehicle> Vehicles { get; set; }
 }
