@@ -15,4 +15,5 @@ public class UserDetails
     public string IdentityCardNumber { get; set; }
     public string? CompanyName { get; set; }
     public string? Nip { get; set; }
+    public bool isDefault { get; set; }
 }
