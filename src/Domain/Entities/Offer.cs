@@ -10,7 +10,9 @@ public class Offer
     public ICollection<Feature> Features { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
-    public decimal Price { get; set; }
+    public decimal NetPrice { get; set; }
+    public decimal TaxValue { get; set; }
+    public decimal GrossPrice { get; set; }
     public bool Booked { get; set; }
     public bool IsActive { get; set; }
 }
