@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class User
+namespace Domain.Entities;
+
+public class User : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public Guid RoleId { get; set; }

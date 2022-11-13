@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class AccessoryCategory
+namespace Domain.Entities;
+
+public class AccessoryCategory : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class Payment
+namespace Domain.Entities;
+
+public class Payment : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public Guid ReservationId { get; set; }

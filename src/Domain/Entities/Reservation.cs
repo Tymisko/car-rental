@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class Reservation
+namespace Domain.Entities;
+
+public class Reservation : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public Guid ReservationStatusId { get; set; }

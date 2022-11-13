@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class Address
+namespace Domain.Entities;
+
+public class Address : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public string Street { get; set; }
