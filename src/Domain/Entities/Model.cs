@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class Model
+namespace Domain.Entities;
+
+public class Model : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public Guid BrandId { get; set; }

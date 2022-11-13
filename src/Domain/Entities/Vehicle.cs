@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class Vehicle
+namespace Domain.Entities;
+
+public class Vehicle : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public Guid GenerationId { get; set; }

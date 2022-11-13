@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class Generation
+namespace Domain.Entities;
+
+public class Generation : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public Guid ModelId { get; set; }

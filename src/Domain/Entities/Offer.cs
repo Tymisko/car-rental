@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Common;
 
-public class Offer
+namespace Domain.Entities;
+
+public class Offer : BaseAuditableEntity
 {
     public Guid Id { get; set; }
     public Guid VehicleId { get; set; }
